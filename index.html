@@ -3,65 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recept</title>
+    <title>Recept - Start</title>
+    <link href="Resources/css/reset.css" rel="stylesheet">
     <link href="Resources/css/style.css" rel="stylesheet">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
 
     <header class="page-header">
-        <img id="header" src="Resources/img/134112.png" alt="Illustration of pancakes">
+        <img class="logo" src="/Resources/img/Logo.png" alt aria-hidden="true">
+        <nav>
+            <ul>
+                <li><a href="#" aria-current="page">Home</a></li>
+                <li><a href="/pancakes.html">Recept</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li class="button"><a href="/submit.html">Dela recept</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main-content" class="container">
-        <h1>Enkelt recept på pannkakor</h1>
-        <p class="intro">
-            Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.
-        </p>
+        <h1>Välkommen till Recipe Haven</h1>
+        <figure>
+            <img src="#" alt="">
+            <figcaption>
+                <p class="intro">
+                    Vi har alla recept du kan tänkas leta efter.
+                </p>
+            </figcaption>
+        </figure>
 
         <section aria-labelledby="ingredients-heading">
-            <h2 id="ingredients-heading">Ingredienser</h2>
-            <p class="portion-info">För 4 portioner</p>
-
-            <ul>
-                <li>2 ½ dl vetemjöl</li>
-                <li>½ tsk salt</li>
-                <li>6 dl mjölk</li>
-                <li>3 ägg</li>
-                <li>smör (till stekning)</li>
-                <li>sylt, bär eller frukt till servering</li>
-            </ul>
-        </section>
-
-        <section aria-labelledby="instructions-heading">
-            <h2 id="instructions-heading">Så här gör du</h2>
-
-            <ol>
-                <li>Blanda mjöl och salt i en bunke.</li>
-                <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-                <li>Vispa i resten av mjölken och äggen.</li>
-                <li>Låt smeten vila ca 10 minuter.</li>
-                <li>Stek tunna pannkakor i lite smör.</li>
-                <li>Servera med sylt, bär eller frukt.</li>
-            </ol>
-        </section>
-
-        <section aria-labelledby="serving-heading">
-            <h2 id="serving-heading">Serveringsförslag</h2>
-
-            <div class="gallery">
-                <figure>
-                    <img src="Resources/img/134123.png" alt="Serving suggestion of pancakes">
-                    <figcaption class="visually-hidden">Serveringsförslag pannkakor</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="Resources/img/134131.png" alt="Serving suggestion of pancakes with fruit">
-                    <figcaption class="visually-hidden">Pannkakor med frukt</figcaption>
-                </figure>
-            </div>
         </section>
 
     </main>
+    <footer>
+        <section>
+            <figure aria-labelledby="footer-logo">
+                <img src="/Resources/img/Logo-alt.png" alt aria-hidden="true">
+                <figcaption>Enkla vardagsrecept som alla kan laga.</figcaption>
+            </figure>
+            <ul aria-labelledby="footer-links">
+                <li><a href="#">Om oss</a></li>
+                <span>Fler recept</span>
+                <li><a href="#">Frukost</a></li>
+                <li><a href="#">Middag</a></li>
+                <li><a href="#">Efterrätt</a></li>
+                <li><a href="#">Fika</a></li>
+            </ul>
+        </section>
+        <section class="copyright" aria-labelledby="footer-copyright">
+            <p>Bilder från picsum.photos . @ 2026 Mikael Pros</p>
+        </section>
+    </footer>
 </body>
 </html>

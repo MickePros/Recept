@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url(/Resources/fonts/KaushanScript-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-color: lightpink;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,17 +12,81 @@ body{
 }
 
 header{
-    background-color: white;
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 40px 1px 40px;
+    background-color: var(--clr-lilac-100);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 5rem;
+
+    img.logo{
+        max-height:7rem;
+    }
+
+    nav{
+        ul{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+                a{
+                    color: var(--clr-lilac-600);
+                    font-family: var(--ff-headings);
+                    text-decoration: none;
+
+                    &[aria-current="page"] {
+                    border-bottom: 2px solid var(--clr-lilac-600);
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: var(--clr-lilac-100);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+
+    section {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+        
+        ul {
+            list-style: none;
+            line-height: 1rem;
+
+            li a {
+                font-family: var(--ff-headings);
+                color: var(--clr-lilac-600);
+            }
+
+            span {
+                font-family: var(--ff-headings);
+                display: inline-block;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    figure img {
+        max-height: 9rem;
+    }
+
+    .copyright {
+        justify-content: center;
+    }
 }
 
 #main-content{
     background-color: white;
-    width: 80%;
-    margin: 0 auto 40px auto;
-    padding: 1px 40px 40px 40px;
+    padding: 0px 40px;
 }
 
 #header{
@@ -25,6 +96,7 @@ header{
 }
 
 h1{
+    font-family: 'Kaushan Script', sans-serif;
     color: brown;
 }
 
