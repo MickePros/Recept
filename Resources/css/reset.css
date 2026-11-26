@@ -1,12 +1,19 @@
 :root{
     --ff-headings: 'Kaushan Script', sans-serif;
 
-    --clr-lilac-99: #d9c5e9;
-    --clr-lilac-100: #C9AFDE;
-    --clr-lilac-101: #c6a5e0;
-    --clr-lilac-200: #a855f7;
-    --clr-lilac-500: #b809b8;
-    --clr-lilac-600: purple;
+    --clr-lilac-99: oklch(85.125% 0.05376 310.02);
+    --clr-lilac-100: oklch(79.183% 0.07121 309.695);
+    --clr-lilac-101: oklch(77.126% 0.08979 309.72);
+    --clr-lilac-200: oklch(62.684% 0.23265 303.896);
+    --clr-lilac-500: oklch(55.111% 0.24976 328.32);
+    --clr-lilac-600: oklch(42.09% 0.19352 328.352);
+
+    --clr-pink-100: oklab(72.828% 0.19519 -0.02754);
+
+    --clr-black-100: oklch(0% 0 0);
+
+    --gdt-btm-lilac: linear-gradient(to bottom, var(--clr-lilac-100) 3%, var(--clr-lilac-200) 50%, var(--clr-lilac-100));
+    --gdt-eps-pink: radial-gradient(ellipse at center, var(--clr-black-100), var(--clr-pink-100), transparent 75%);
 }
 
 /* 1. Use a more-intuitive box-sizing model */

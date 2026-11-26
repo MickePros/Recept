@@ -85,7 +85,7 @@ footer{
 }
 
 #main-content{
-    background-color: var(--clr-lilac-99);
+    background-image: var(--gdt-btm-lilac);
     padding: 20px 40px;
 }
 
@@ -150,6 +150,13 @@ footer{
         label{
             display: inline;
         }
+    }
+    .form-submit{
+        display: flex;
+        justify-content: center;
+        padding-block: 2rem;
+        border-radius: 75%;
+        background-image: var(--gdt-eps-pink);
     }
 }
 
