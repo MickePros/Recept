@@ -1,7 +1,9 @@
 :root{
     --ff-headings: 'Kaushan Script', sans-serif;
 
+    --clr-lilac-99: #d9c5e9;
     --clr-lilac-100: #C9AFDE;
+    --clr-lilac-101: #c6a5e0;
     --clr-lilac-200: #a855f7;
     --clr-lilac-500: #b809b8;
     --clr-lilac-600: purple;

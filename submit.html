@@ -11,71 +11,102 @@
     <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
 
     <header class="page-header">
-        <img class="logo" src="/Resources/img/Logo.png" alt aria-hidden="true"></img>
+        <img class="logo" src="/Resources/img/Logo.png" alt aria-hidden="true">
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/pancakes.html">Recept</a></li>
                 <li><a href="#">Om oss</a></li>
-                <li class="button"><a href="#" aria-current="page">Dela recept</a></li>
+                <li class="button"><a href="/submit.html" aria-current="page">Dela recept</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content" class="container">
-        <h1>Enkelt recept på pannkakor</h1>
-        <p class="intro">
-            Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.
-        </p>
 
-        <section aria-labelledby="ingredients-heading">
-            <h2 id="ingredients-heading">Ingredienser</h2>
-            <p class="portion-info">För 4 portioner</p>
+        <form class="share" action="" method="get">
+            <h1>Dela ditt recept</h1>
+            <p>Här kan du dela ditt recept med oss.</p>
 
-            <ul>
-                <li>2 ½ dl vetemjöl</li>
-                <li>½ tsk salt</li>
-                <li>6 dl mjölk</li>
-                <li>3 ägg</li>
-                <li>smör (till stekning)</li>
-                <li>sylt, bär eller frukt till servering</li>
-            </ul>
-        </section>
+            <fieldset>
+                <legend>Om receptet</legend>
+                <div>
+                    <label for="recepi-name">Receptets namn *</label>
+                    <input type="text" id="recepi-name" name="recepi-name" placeholder="Receptets namn" required minlength="3" maxlength="50">
+                </div>
+                <div>
+                    <label for="category">Kategori</label>
+                    <select id="category" name="category">
+                        <option value="">Välj en kategori</option>
+                        <option value="breakfast">Frukost</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Middag</option>
+                        <option value="desert">Efterrätt</option>
+                        <option value="fika">Fika</option>
+                    </select>
+                </div>
+                <section class="form-double">
+                    <div>
+                        <label for="time">Tid i minuter</label>
+                        <input type="number" id="time" name="time" min="0" step="15">
+                    </div>
+                    <div>
+                        <label for="amount">Antal portioner</label>
+                        <input type="number" id="amount" name="amount" min="1">
+                    </div>
+                </section>
+            </fieldset>
 
-        <section aria-labelledby="instructions-heading">
-            <h2 id="instructions-heading">Så här gör du</h2>
+            <fieldset>
+                <legend>Svårighetsgrad</legend>
+                <section class="form-radio">
+                    <div>
+                        <input type="radio" id="easy" name="experience" value="easy">
+                        <label for="easy">Lätt</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="intermediate" name="experience" value="intermediate">
+                        <label for="intermediate">Medel</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hard" name="experience" value="hard">
+                        <label for="hard">Svår</label>
+                    </div>
+                </section>
+            </fieldset>
 
-            <ol>
-                <li>Blanda mjöl och salt i en bunke.</li>
-                <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-                <li>Vispa i resten av mjölken och äggen.</li>
-                <li>Låt smeten vila ca 10 minuter.</li>
-                <li>Stek tunna pannkakor i lite smör.</li>
-                <li>Servera med sylt, bär eller frukt.</li>
-            </ol>
-        </section>
+            <fieldset>
+                <legend>Receptet</legend>
+                <div>
+                    <label for="ingredients">Ingredienser</label>
+                    <textarea id="ingredients" name="ingredients" rows="2" required></textarea>
+                </div>
+                <div>
+                    <label for="steps">Gör så här</label>
+                    <textarea id="steps" name="steps" rows="2" required></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Om dig</legend>
+                <div>
+                    <label for="name">Ditt namn</label>
+                    <input type="text" id="name" name="name" placeholder="Namn" minlength="3" maxlength="30">
+                </div>
+                <div>
+                    <label for="email">E-post *</label>
+                    <input type="email" id="email" name="email" placeholder="E-post" required>
+                </div>
+            </fieldset>
 
-        <section aria-labelledby="serving-heading">
-            <h2 id="serving-heading">Serveringsförslag</h2>
-
-            <div class="gallery">
-                <figure>
-                    <img src="Resources/img/134123.png" alt="Serving suggestion of pancakes">
-                    <figcaption class="visually-hidden">Serveringsförslag pannkakor</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="Resources/img/134131.png" alt="Serving suggestion of pancakes with fruit">
-                    <figcaption class="visually-hidden">Pannkakor med frukt</figcaption>
-                </figure>
-            </div>
-        </section>
+            <button type="submit">Skicka recept</button>
+        </form>
 
     </main>
     <footer>
         <section>
             <figure aria-labelledby="footer-logo">
-                <img src="/Resources/img/Logo-alt.png" alt aria-hidden="true"></img>
+                <img src="/Resources/img/Logo-alt.png" alt aria-hidden="true">
                 <figcaption>Enkla vardagsrecept som alla kan laga.</figcaption>
             </figure>
             <ul aria-labelledby="footer-links">
